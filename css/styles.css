@@ -5,6 +5,11 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 /* Typography */
 html {
   /* rem resets to 10px */
@@ -138,4 +143,53 @@ a {
 }
 .icon-primary {
   fill: var(--color-primary);
+}
+/* Buttons */
+.btn {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 2rem 4rem;
+  border: 0;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  text-align: center;
+  margin: 1rem;
+}
+.btn--primary:hover {
+  background-color: #0572ff;
+}
+.btn--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.btn--secondary {
+  background-color: var(--color-secondary);
+  color: white;
+}
+.btn--secondary:hover {
+  background-color: #00c8eb;
+}
+.btn--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+.btn--accent:hover {
+  background-color: #e02e00;
+}
+.btn--block {
+  width: 100%;
+  display: inline-block;
+}
+.btn--outline {
+  background-color: #fff;
+  border: 3px solid var(--color-headings);
+}
+.btn--outline:hover {
+  background-color: var(--color-headings);
+  color: white;
+}
+@media screen and (min-width: 1024px) {
 }
