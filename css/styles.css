@@ -96,3 +96,29 @@ a {
     padding-left: 0;
   }
 }
+/* Badge */
+.badge {
+  border-radius: 20rem;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  white-space: normal;
+}
+.badge--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.badge--secondary {
+  background-color: var(--color-primary);
+  color: white;
+}
+.badge--small {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
