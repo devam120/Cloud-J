@@ -6,6 +6,7 @@
   --color-border: #ccc;
   --color-body: #918ca4;
   --border-radius: 30px;
+  --color-dark-body: #5c5577;
 }
 *,
 *::after,
@@ -303,5 +304,53 @@ a {
   }
   .plan__desc {
     font-size: 1.6rem;
+  }
+}
+/* Media */
+.media {
+  display: flex;
+}
+.media__title {
+  margin-top: 0;
+}
+.media__body {
+  margin: 0 2rem;
+}
+.media__image {
+  margin-top: 1.5rem;
+}
+/* Review Quote */
+.quote {
+  font-style: italic;
+  color: var(--color-dark-body);
+  line-height: 1.2;
+  font-size: 3rem;
+}
+.quote__text::before {
+  content: open-quote;
+}
+.quote__text::after {
+  content: close-quote;
+}
+.quote__author {
+  font-size: 3rem;
+  font-weight: 500;
+  font-style: normal;
+  margin-top: 1.5rem;
+}
+.author_org {
+  font-style: normal;
+  color: var(--color-dark-body);
+  opacity: 0.8;
+}
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2rem;
+  }
+  .quote__author {
+    font-size: 2.5rem;
+  }
+  .author__org {
+    font-size: 1.5rem;
   }
 }
