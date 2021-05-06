@@ -135,17 +135,30 @@ a {
   width: 50px;
   height: 50px;
 }
+.icon--small {
+  width: 50px;
+  height: 29px;
+}
+.icon-primary {
+  fill: var(--color-primary);
+}
+/* .icon--accent {
+  fill: var(--color-accent);
+} */
+.icon--white {
+  fill: white;
+}
 .icon-container {
-  width: 66px;
-  height: 66px;
+  width: 64px;
+  height: 64px;
   background-color: #f3f9fa;
   border-radius: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-.icon-primary {
-  fill: var(--color-primary);
+.icon-containe--accentr {
+  background-color: var(--color-accent);
 }
 /* Buttons */
 .btn {
@@ -361,5 +374,26 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Review Card */
+.review__card {
+  padding: 3rem;
+}
+.rc__image {
+  position: relative;
+}
+.rc__image > img {
+  width: 100%;
+}
+.rc__image > .icon-container {
+  position: absolute;
+  top: 2rem;
+  right: -32px;
+}
+@media screen and (min-width: 1024px) {
+  .review__card .quote,
+  .review__card .quote__author {
+    font-size: 2.5rem;
   }
 }
