@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="An iconic Tech Experience with Cloud J" />
+    <meta property="og:title" content="Cloud J" />
+    <meta property="og:type" content="Website" />
+    <title>Cloud J - Uplift your content</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
@@ -12,23 +15,21 @@
     />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="stylesheet" href="/css/normalize.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Nav-Bar Startes -->
     <header>
       <nav class="nav collapsible">
-        <a href="#">
+        <a href="#" style="width: 170px">
           <img class="logo" src="/images/logo.png" alt="" />
-          <!-- remove Chevron and add cloud j image -->
         </a>
         <svg class="icon icon--white menu-icon">
           <use xlink:href="images/sprite.svg#menu"></use>
@@ -43,10 +44,12 @@
     </header>
     <!-- Nav-Bar Ends -->
     <!-- Hero Element Starts -->
-    <div class="block block--dark block--skewed-left hero">
+    <div class="block block--dark block--skewed-left hero" data-aos="zoom-in">
       <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud J<br />Uplift Your Content</h1>
+        <header class="hero__content">
+          <h1 class="block__heading hero_heading">
+            Cloud J<br />Uplift your content
+          </h1>
           <p class="hero__tagline">An Iconic Tech Experience..</p>
           <a href="" class="btn btn--accent btn--long">Get Started</a>
         </header>
@@ -59,7 +62,7 @@
       <header class="block__header">
         <h2>Starting at ₹749 per Month</h2>
       </header>
-      <p>
+      <p class="domain_content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis,
         tenetur doloribus quam nostrum asperiores sint pariatur aut nam. Aut,
         delectus!
@@ -77,20 +80,20 @@
           Search
         </button>
       </div>
-      <ul class="list block-domain__price">
+      <ul class="list block-domain__price" data-aos="zoom-in-up">
         <li class="badge badge--secondary">.com ₹449</li>
         <li>.org ₹849</li>
-        <li>.info ₹359</li>
+        <li>.in ₹359</li>
         <li>.net ₹749</li>
         <li>.co ₹849</li>
-        <li>.in ₹749</li>
+        <li>.ml ₹749</li>
       </ul>
     </div>
     <!-- Domain Block Ends -->
     <!-- Plan Card Starts -->
     <section class="block container block-plans">
       <div class="grid grid--1x3">
-        <div class="plan">
+        <div class="plan" data-aos="flip-left">
           <div class="card card--secondary">
             <div class="card__header">
               <h3 class="plan__name card__style">Personal</h3>
@@ -114,7 +117,7 @@
             </div>
           </div>
         </div>
-        <div class="plan plan--popular">
+        <div class="plan plan--popular" data-aos="flip-left">
           <div class="card card--primary">
             <div class="card__header">
               <h3 class="plan__name card__style">Premium</h3>
@@ -139,7 +142,7 @@
           </div>
         </div>
 
-        <div class="plan">
+        <div class="plan" data-aos="flip-left">
           <div class="card card--secondary">
             <div class="card__header">
               <h3 class="plan__name card__style">Business</h3>
@@ -175,8 +178,9 @@
           neque.
         </p>
       </header>
+      <!-- Feature Block 1 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon-primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -189,7 +193,8 @@
           </p>
           <a href="" class="arrow-link">Learn More</a>
         </div>
-        <picture>
+
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="/images/easy.webp 1x, /images/easy@2x.webp 2x"
@@ -198,11 +203,13 @@
             type="image/jpg"
             srcset="/images/easy.jpg 1x, /images/easy@2x.jpg 2x"
           />
+
           <img class="feature__image" src="/images/easy@2x.jpg" alt="" />
         </picture>
       </article>
+      <!-- Feature Block 2 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon-primary">
               <use xlink:href="images/sprite.svg#computer"></use>
@@ -215,7 +222,7 @@
           </p>
           <a href="" class="arrow-link">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="/images/fast.webp 1x, /images/fast@2x.webp 2x"
@@ -227,8 +234,9 @@
           <img class="feature__image" src="/images/fast@2x.jpg" alt="" />
         </picture>
       </article>
+      <!-- Feature Block 3 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon-primary">
               <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -241,7 +249,7 @@
           </p>
           <a href="" class="arrow-link">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-left">
           <source
             type="image/webp"
             srcset="/images/wordpress.webp 1x, /images/wordpress@2x.webp 2x"
@@ -253,8 +261,9 @@
           <img class="feature__image" src="/images/wordpress@2x.jpg" alt="" />
         </picture>
       </article>
+      <!-- Feature Block 4 -->
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon-primary">
               <use xlink:href="images/sprite.svg#clock"></use>
@@ -267,7 +276,7 @@
           </p>
           <a href="" class="arrow-link">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="fade-right">
           <source
             type="image/webp"
             srcset="/images/support.webp 1x, /images/support@2x.webp 2x"
@@ -300,7 +309,7 @@
         </picture>
         <ul class="list">
           <li>
-            <div class="media">
+            <div class="media" data-aos="flip-down">
               <div class="media__image">
                 <svg class="icon icon-primary">
                   <use xlink:href="images/sprite.svg#snap"></use>
@@ -317,7 +326,7 @@
             </div>
           </li>
           <li>
-            <div class="media">
+            <div class="media" data-aos="flip-down">
               <div class="media__image">
                 <svg class="icon icon-primary">
                   <use xlink:href="images/sprite.svg#growth"></use>
@@ -334,7 +343,7 @@
             </div>
           </li>
           <li>
-            <div class="media">
+            <div class="media" data-aos="flip-down">
               <div class="media__image">
                 <svg class="icon icon-primary">
                   <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -363,7 +372,7 @@
           vitae.
         </p>
       </header>
-      <div class="container">
+      <div class="container" data-aos="zoom-out">
         <div class="card review__card">
           <div class="grid grid--1x2">
             <div class="rc__image">
@@ -401,8 +410,9 @@
     </section>
     <!-- Review Block Ends -->
     <!-- Callout Starts -->
-    <div class="container">
-      <div class="callout callout--primary">
+
+    <div class="container" data-aos="flip-up">
+      <div class="callout callout--primary container__overlay">
         <div class="grid grid--1x2">
           <div class="callout__content">
             <h3 class="callout__heading">Ready to Get Started?</h3>
@@ -412,23 +422,22 @@
               at veniam ducimus nostrum!
             </p>
           </div>
-          <button href="#" class="btn btn--long btn--secondary">
-            Get Started
-          </button>
+          <button class="btn btn--long btn--secondary">Get Started</button>
         </div>
       </div>
     </div>
     <!-- Callout Ends -->
+
     <!-- Footer Block Starts -->
     <footer class="block block--dark footer">
       <div class="container grid footer__divs">
         <div class="collapsible collapsible--expanded footer__div">
-          <header class="collapsible__header">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading">Products</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Website</a></li>
@@ -438,13 +447,13 @@
             </ul>
           </div>
         </div>
-        <div class="collapsible collapsible--expanded footer__div">
-          <header class="collapsible__header">
+        <div class="collapsible footer__div">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading">Company</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">About</a></li>
@@ -453,13 +462,13 @@
             </ul>
           </div>
         </div>
-        <div class="collapsible collapsible--expanded footer__div">
-          <header class="collapsible__header">
+        <div class="collapsible footer__div">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading">support</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Contact</a></li>
@@ -468,13 +477,13 @@
             </ul>
           </div>
         </div>
-        <div class="collapsible collapsible--expanded footer__div">
-          <header class="collapsible__header">
+        <div class="collapsible footer__div">
+          <div class="collapsible__header">
             <h2 class="collapsible__heading">Domain</h2>
             <svg class="icon icon--white collapsible__icon">
               <use xlink:href="images/sprite.svg#chevron"></use>
             </svg>
-          </header>
+          </div>
           <div class="collapsible__content">
             <ul class="list">
               <li><a href="#">Domain Checker</a></li>
